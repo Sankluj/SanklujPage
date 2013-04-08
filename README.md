@@ -1,0 +1,1 @@
+Playing around with static website generator nanoc and bootstrap 
