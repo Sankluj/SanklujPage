@@ -1,0 +1,137 @@
+Crashlog created at 2013-04-08 16:36:11 +1000
+
+===== MESSAGE:
+
+RuntimeError: Found 4 content files for content/font/fontawesome-webfont; expected 0 or 1
+
+===== COMPILATION STACK:
+
+  (empty)
+
+===== STACK TRACE:
+
+  0. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/data_sources/filesystem.rb:164:in `block in all_split_files_in'
+  1. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/data_sources/filesystem.rb:154:in `each_pair'
+  2. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/data_sources/filesystem.rb:154:in `all_split_files_in'
+  3. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/data_sources/filesystem.rb:78:in `load_objects'
+  4. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/data_sources/filesystem.rb:37:in `items'
+  5. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/source_data/site.rb:325:in `block in load_items'
+  6. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/source_data/site.rb:324:in `each'
+  7. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/source_data/site.rb:324:in `load_items'
+  8. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/source_data/site.rb:243:in `load'
+  9. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/source_data/site.rb:127:in `layouts'
+  10. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:186:in `dependency_tracker'
+  11. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/memoization.rb:56:in `block in memoize'
+  12. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:455:in `stores'
+  13. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:145:in `unload'
+  14. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/source_data/site.rb:274:in `unload'
+  15. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/source_data/site.rb:254:in `rescue in load'
+  16. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/source_data/site.rb:258:in `load'
+  17. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/command_runner.rb:63:in `load_site'
+  18. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/commands/compile.rb:319:in `run'
+  19. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  20. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  21. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  22. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/command_runner.rb:13:in `call'
+  23. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command_dsl.rb:185:in `block in runner'
+  24. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
+  25. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
+  26. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
+  27. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command.rb:262:in `run'
+  28. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli.rb:52:in `block in run'
+  29. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  30. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  31. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli.rb:50:in `run'
+  32. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/bin/nanoc:19:in `<top (required)>'
+  33. C:/Ruby200-x64/bin/nanoc:23:in `load'
+  ... 36 more lines omitted. See full crash log for details.
+
+===== VERSION INFORMATION:
+
+nanoc 3.6.2 ¸ 2007-2013 Denis Defreyne.
+Running ruby 2.0.0 (2013-02-24) on x64-mingw32 with RubyGems 2.0.0.
+
+===== INSTALLED GEMS:
+
+  adsf 1.1.1
+  bigdecimal 1.2.0
+  colored 1.2
+  cri 2.3.0
+  io-console 0.4.2
+  json 1.7.7
+  minitest 4.3.2
+  nanoc 3.6.2
+  psych 2.0.0
+  rack 1.5.2
+  rake 0.9.6
+  rdoc 4.0.0
+  test-unit 2.0.0.0
+
+===== ENVIRONMENT:
+
+ALLUSERSPROFILE => "C:\\ProgramData"
+AMDAPPSDKROOT => "C:\\Program Files (x86)\\AMD APP\\"
+ANT_HOME => "C:\\Program Files (x86)\\WinAnt"
+APPDATA => "C:\\Users\\matthieukluj\\AppData\\Roaming"
+AS_HOME => "C:\\SMD\\glassfish_com"
+CLASSPATH => ".;C:\\Program Files (x86)\\Java\\jre6\\lib\\ext\\QTJava.zip"
+COMPUTERNAME => "TUREIS"
+ComSpec => "C:\\Windows\\system32\\cmd.exe"
+CommonProgramFiles => "C:\\Program Files\\Common Files"
+CommonProgramFiles(x86) => "C:\\Program Files (x86)\\Common Files"
+CommonProgramW6432 => "C:\\Program Files\\Common Files"
+FLEX_HOME => "C:\\SMD\\flex_sdk_3.5.0.12683B"
+FP_NO_HOST_CHECK => "NO"
+HOME => "C:/Users/matthieukluj"
+HOMEDRIVE => "C:"
+HOMEPATH => "\\Users\\matthieukluj"
+JAVA_HOME => "C:\\Program Files (x86)\\Java\\jre6\\bin"
+LOCALAPPDATA => "C:\\Users\\matthieukluj\\AppData\\Local"
+LOGONSERVER => "\\\\TUREIS"
+NUMBER_OF_PROCESSORS => "4"
+OPENSSL_CONF => "C:\\OpenSSL-Win32\\bin\\openssl.cfg"
+OS => "Windows_NT"
+PATHEXT => ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL"
+PROCESSOR_ARCHITECTURE => "AMD64"
+PROCESSOR_IDENTIFIER => "Intel64 Family 6 Model 42 Stepping 7, GenuineIntel"
+PROCESSOR_LEVEL => "6"
+PROCESSOR_REVISION => "2a07"
+PROMPT => "$P$G"
+PSModulePath => "C:\\Users\\matthieukluj\\Documents\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\"
+PUBLIC => "C:\\Users\\Public"
+Path => "%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;c:\\Program Files\\Intel\\DMIX;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\NTRU Cryptosystems\\NTRU TCG Software Stack\\bin\\;C:\\Program Files\\NTRU Cryptosystems\\NTRU TCG Software Stack\\bin\\;C:\\Program Files (x86)\\Intel\\Services\\IPT\\;C:\\Program Files\\Dell\\Dell Data Protection\\Access\\Advanced\\Wave\\Gemalto\\Access Client\\v5\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\DLLShared\\;C:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\DLLShared\\;C:\\Program Files (x86)\\Common Files\\Roxio Shared\\OEM\\12.0\\DLLShared\\;C:\\Program Files (x86)\\Roxio\\OEM\\AudioCore\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Visual Leak Detector\\bin\\Win32;C:\\Program Files (x86)\\Visual Leak Detector\\bin\\Win64;C:\\Program Files\\TortoiseHg\\;C:\\SMD\\apache-ant-1.8.2\\bin;C:\\Program Files\\Java\\jdk1.6.0_29\\jre\\bin;C:\\SMD\\glassfish_com\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Common Files\\Easysoft\\Shared\\;C:\\Program Files (x86)\\Common Files\\Easysoft\\Shared\\;C:\\Program Files\\Common Files\\Easysoft\\Shared\\;C:\\Program Files (x86)\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Ruby200-x64\\bin;C:\\SMD\\glassfish_com\\bin;C:\\OpenSSL-Win32\\bin;C:\\Program Files (x86)\\WinAnt\\bin;C:\\Users\\matthieukluj\\AppData\\Roaming\\npm\\;C:\\Users\\matthieukluj\\Library\\tidy;C:\\Python27"
+ProgramData => "C:\\ProgramData"
+ProgramFiles => "C:\\Program Files"
+ProgramFiles(x86) => "C:\\Program Files (x86)"
+ProgramW6432 => "C:\\Program Files"
+QTJAVA => "C:\\Program Files (x86)\\Java\\jre6\\lib\\ext\\QTJava.zip"
+SESSIONNAME => "Console"
+SSH_AGENT_PID => "7248"
+SSH_AUTH_SOCK => "/tmp/ssh-eaWJUg4500/agent.4500"
+SystemDrive => "C:"
+SystemRoot => "C:\\Windows"
+TEMP => "C:\\Users\\MATTHI~1\\AppData\\Local\\Temp"
+TMP => "C:\\Users\\MATTHI~1\\AppData\\Local\\Temp"
+USER => "matthieukluj"
+USERDOMAIN => "TUREIS"
+USERNAME => "matthieukluj"
+USERPROFILE => "C:\\Users\\matthieukluj"
+VS90COMNTOOLS => "C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\Tools\\"
+windir => "C:\\Windows"
+windows_tracing_flags => "3"
+windows_tracing_logfile => "C:\\BVTBin\\Tests\\installpackage\\csilogfile.log"
+
+===== LOAD PATHS:
+
+  0. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib
+  1. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/colored-1.2/lib
+  2. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib
+  3. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib
+  4. C:/Ruby200-x64/lib/ruby/site_ruby/2.0.0
+  5. C:/Ruby200-x64/lib/ruby/site_ruby/2.0.0/x64-msvcrt
+  6. C:/Ruby200-x64/lib/ruby/site_ruby
+  7. C:/Ruby200-x64/lib/ruby/vendor_ruby/2.0.0
+  8. C:/Ruby200-x64/lib/ruby/vendor_ruby/2.0.0/x64-msvcrt
+  9. C:/Ruby200-x64/lib/ruby/vendor_ruby
+  10. C:/Ruby200-x64/lib/ruby/2.0.0
+  11. C:/Ruby200-x64/lib/ruby/2.0.0/x64-mingw32
