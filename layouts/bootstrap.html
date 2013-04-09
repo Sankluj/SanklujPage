@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Sankluj's Page</title>
+    <title>Sankluj's Page - <%= @item[:title] %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -114,6 +114,27 @@
           <% if @item[:author] %>
           <p><small>Author: <%= @item[:author] %>.</small></p>
           <% end %>
+          <!-- Comments -->
+          <% if @item[:commentsEnable] == true %>
+            <hr>
+            <div class="row-fluid">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+                  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                  var disqus_shortname = 'testwebsitesankluj'; // required: replace example with your forum shortname
+                  var disqus_developer = 1;
+
+                  /* * * DON'T EDIT BELOW THIS LINE * * */
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+          <% end %>
         </div>
         <!-- Side Bar -->
         <div class="span3">
@@ -145,6 +166,31 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/js/jquery.js"></script>
     <script src="/js/bootstrap.js"></script>
+    <script type="text/javascript">
+      // $('.nav li').click(function(e){
+      //   $('.nav li').removeClass('active');
+      //   var $this = $(this);
+      //   if (!$this.hasClass('active'))
+      //     $this.addClass('active');
+      //   e.preventDefault();
+      // })
+      // $(document).ready(function() {
+      //   $('.nav li').addClass('active');
+      // })
+    </script>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'testwebsitesankluj'; // required: replace example with your forum shortname
+      var disqus_developer = 1;
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function () {
+          var s = document.createElement('script'); s.async = true;
+          s.type = 'text/javascript';
+          s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+          (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    </script>
 
   </body>
 </html>

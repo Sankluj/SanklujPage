@@ -1,41 +1,57 @@
-Crashlog created at 2013-04-09 09:26:14 +1000
+Crashlog created at 2013-04-09 16:09:04 +1000
 
 ===== MESSAGE:
 
-LoadError: cannot load such file -- mime/types
-Install the 'mime-types' gem using `gem install mime-types`.
+SyntaxError: layout /bootstrap/:118: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...out.concat(( if @item[:title] ).to_s); _erbout.concat "\n   ...
+...                               ^
+layout /bootstrap/:135: syntax error, unexpected keyword_end, expecting end-of-input
+;  end ; _erbout.concat "\n        ...
+      ^
 
 ===== COMPILATION STACK:
 
-  (empty)
+  - [item]   /blog/ (rep default)
 
 ===== STACK TRACE:
 
-  0. C:/Ruby200-x64/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb:45:in `require'
-  1. C:/Ruby200-x64/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb:45:in `require'
-  2. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/extra/auto_compiler.rb:17:in `initialize'
-  3. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/commands/autocompile.rb:53:in `new'
-  4. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/commands/autocompile.rb:53:in `run'
-  5. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/command_runner.rb:14:in `block in call'
-  6. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
-  7. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
-  8. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/command_runner.rb:13:in `call'
-  9. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command_dsl.rb:185:in `block in runner'
-  10. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
-  11. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
-  12. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
-  13. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command.rb:262:in `run'
-  14. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli.rb:52:in `block in run'
-  15. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
-  16. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
-  17. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli.rb:50:in `run'
-  18. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/bin/nanoc:19:in `<top (required)>'
-  19. C:/Ruby200-x64/bin/nanoc:23:in `load'
-  ... 22 more lines omitted. See full crash log for details.
+  0. C:/Ruby200-x64/lib/ruby/2.0.0/erb.rb:849:in `eval'
+  1. C:/Ruby200-x64/lib/ruby/2.0.0/erb.rb:849:in `result'
+  2. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/filters/erb.rb:34:in `run'
+  3. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/compilation/filter.rb:122:in `setup_and_run'
+  4. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/result_data/item_rep.rb:409:in `layout'
+  5. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/compilation/item_rep_proxy.rb:69:in `layout'
+  6. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/compilation/rule_context.rb:68:in `layout'
+  7. ./Rules:29:in `block in load'
+  8. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/compilation/rule.rb:68:in `instance_eval'
+  9. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/compilation/rule.rb:68:in `apply_to'
+  10. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:383:in `compile_rep'
+  11. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:339:in `block in compile_reps'
+  12. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:332:in `loop'
+  13. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:332:in `compile_reps'
+  14. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:89:in `run'
+  15. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/base/source_data/site.rb:58:in `compile'
+  16. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/commands/compile.rb:325:in `run'
+  17. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  18. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  19. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  20. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/command_runner.rb:13:in `call'
+  21. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command_dsl.rb:185:in `block in runner'
+  22. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
+  23. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
+  24. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
+  25. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command.rb:262:in `run'
+  26. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli.rb:52:in `block in run'
+  27. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  28. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  29. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib/nanoc/cli.rb:50:in `run'
+  30. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/bin/nanoc:19:in `<top (required)>'
+  31. C:/Ruby200-x64/bin/nanoc:23:in `load'
+  ... 34 more lines omitted. See full crash log for details.
 
 ===== VERSION INFORMATION:
 
-nanoc 3.6.2 Â© 2007-2013 Denis Defreyne.
+nanoc 3.6.2 ¸ 2007-2013 Denis Defreyne.
 Running ruby 2.0.0 (2013-02-24) on x64-mingw32 with RubyGems 2.0.0.
 
 ===== INSTALLED GEMS:
@@ -46,6 +62,7 @@ Running ruby 2.0.0 (2013-02-24) on x64-mingw32 with RubyGems 2.0.0.
   cri 2.3.0
   io-console 0.4.2
   json 1.7.7
+  mime-types 1.22
   minitest 4.3.2
   nanoc 3.6.2
   psych 2.0.0
@@ -114,12 +131,11 @@ windows_tracing_logfile => "C:\\BVTBin\\Tests\\installpackage\\csilogfile.log"
   1. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/colored-1.2/lib
   2. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib
   3. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nanoc-3.6.2/lib
-  4. C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib
-  5. C:/Ruby200-x64/lib/ruby/site_ruby/2.0.0
-  6. C:/Ruby200-x64/lib/ruby/site_ruby/2.0.0/x64-msvcrt
-  7. C:/Ruby200-x64/lib/ruby/site_ruby
-  8. C:/Ruby200-x64/lib/ruby/vendor_ruby/2.0.0
-  9. C:/Ruby200-x64/lib/ruby/vendor_ruby/2.0.0/x64-msvcrt
-  10. C:/Ruby200-x64/lib/ruby/vendor_ruby
-  11. C:/Ruby200-x64/lib/ruby/2.0.0
-  12. C:/Ruby200-x64/lib/ruby/2.0.0/x64-mingw32
+  4. C:/Ruby200-x64/lib/ruby/site_ruby/2.0.0
+  5. C:/Ruby200-x64/lib/ruby/site_ruby/2.0.0/x64-msvcrt
+  6. C:/Ruby200-x64/lib/ruby/site_ruby
+  7. C:/Ruby200-x64/lib/ruby/vendor_ruby/2.0.0
+  8. C:/Ruby200-x64/lib/ruby/vendor_ruby/2.0.0/x64-msvcrt
+  9. C:/Ruby200-x64/lib/ruby/vendor_ruby
+  10. C:/Ruby200-x64/lib/ruby/2.0.0
+  11. C:/Ruby200-x64/lib/ruby/2.0.0/x64-mingw32
