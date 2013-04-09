@@ -53,6 +53,10 @@ section {
   display: block;
 }
 
+footer {
+  background-color: #f5f5f5;
+}
+
 audio,
 canvas,
 video {

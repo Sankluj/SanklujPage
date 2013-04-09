@@ -10,11 +10,55 @@
 
     <!-- Le styles -->
     <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/font-awesome_min.css">
     <style>
+      /* Sticky footer styles
+         Inspired by Example from Martin Bean and Ryan Fait
+      -------------------------------------------------- */
+      html,
       body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
       }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      @media (min-width: 980px) {
+        #wrap > .container-fluid {
+          padding-top: 60px;
+        }  
+      }
+      
+      .container-fluid .credit {
+        margin: 20px 0;
+      }
+
     </style>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -33,15 +77,18 @@
 
   <body>
 
+    <!-- Wrap all page content here to push the footer at the bottom of the page -->
+    <div id="wrap">
+
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="container-fluid">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Sankluj.com</a>
+          <a class="brand" href="/">Sankluj.com</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="/">Home</a></li>
@@ -59,31 +106,35 @@
       <!-- Page Content -->
       <div class="row-fluid">
         <!-- Main Column -->
-        <div class="span8">
+        <div class="span9">
           Hi, I'm a new item!
           
           
         </div>
         <!-- Side Bar -->
-        <div class="span4">
-          <h2>About Me</h2>
-          <img src="/img/sheepys.jpg" alt="Sheepys" class="img" />
+        <div class="span3">
+          <h2 class="muted">About</h2>
+          <img src="http://cageme.herokuapp.com/305/305" alt="Sheepys" class="img" />
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          <ul>
-              <li><a class="btn" href="http://www.linkedin.com/in/matthieukluj"><i class="icon-linkedin-sign"></i> Test</a></li>
-              <li><i class="icon-ok"></i><a href="/feed/" title="Subscribe to RSS feed" class="rss">RSS</a></li>
-              <li><a href="http://twitter.com/sankluj" title="Matthieu Kluj on Twitter" class="twitter">Twitter</a></li>
-              <li><a href="http://www.linkedin.com/in/matthieukluj" title="Matthieu Kluj on LinkedIn" class="linkedin">LinkedIn</a></li>
-              <li><a href="https://github.com/Sankluj" title="Matthieu Kluj on Github" class="github">Github</a></li>
-          </ul>
+          <div class="btn-group">
+            <a class="btn btn-large" title="Matthieu Kluj on LinkedIn" href="http://www.linkedin.com/in/matthieukluj"><i class="icon-linkedin icon-large"></i></a>
+            <a class="btn btn-large" title="Matthieu Kluj on Github" href="https://github.com/Sankluj"><i class="icon-github icon-large"></i></a>
+            <a class="btn btn-large" title="Matthieu Kluj on Twitter" href="http://twitter.com/sankluj"><i class="icon-twitter icon-large"></i></a>
+            <a class="btn btn-large" title="Subscribe to RSS feed" href="/feed/"><i class="icon-rss icon-large"></i></a>
+          </div>
         </div>
       </div>
-
-    <footer>
-      <p>&copy; 2013 Matthieu Kluj</p>
-    </footer>
+      <hr>
     </div> <!-- /container -->
 
+      <div id="push"></div>
+    </div>
+
+    <footer id="footer">
+      <div class="container-fluid">
+        <p class="muted credit">&copy; 2013 Matthieu Kluj</p>
+      </div>
+    </footer>
 
     <!-- Le javascript
     ================================================== -->
